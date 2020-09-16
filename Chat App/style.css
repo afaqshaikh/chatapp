@@ -46,3 +46,34 @@ body{
     font-size: 20px;
     color: #9CA1A3;
 }
+.chat-image{
+    width: 30px;
+    height: 30px;
+}
+.receive{
+    background-color: #009688;
+    border-radius: 1rem;
+    padding: 10px 15px;
+    display: inline-block;
+    
+}
+.sent{
+    background-color: whitesmoke;
+    border-radius: 1rem;
+    padding: 10px 15px;
+    display: inline-block;
+    
+}
+.time{
+    font-size: 10px;
+    color:#9CA1A3;
+    margin-top: 3%;
+    margin-left: 1%;
+}
+.card{
+    height: 94vh;
+}
+#messages{
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
