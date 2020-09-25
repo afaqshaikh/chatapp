@@ -1,5 +1,12 @@
 var currentuserKey = ''
 var chatKey = ''
+
+document.addEventListener('keydown', (key) => {
+    if (key.which == 13) {
+        sendMessage()
+    }
+})
+
 ///
 let startChat = (friendKey, friendName, friendPhoto) => {
 
@@ -42,7 +49,6 @@ let startChat = (friendKey, friendName, friendPhoto) => {
 
         document.getElementById('messages').innerHTML = ''
 
-        onPressEnter()
         document.getElementById('textMessage').value = ''
         document.getElementById('textMessage').focus()
 
@@ -109,15 +115,6 @@ let showChatBox = () => {
 let hideChatBox = () => {
     document.getElementById('side-1').classList.add('d-none', 'd-md-block')
     document.getElementById('side-2').classList.remove('d-none')
-}
-
-//Send Message
-let onPressEnter = () => {
-    document.addEventListener('keydown', (key) => {
-        if (key.which == 13) {
-            sendMessage()
-        }
-    })
 }
 
 //message sne function
